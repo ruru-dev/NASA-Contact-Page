@@ -1,17 +1,71 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NASA Contact Page</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Unbounded:wght@800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200&family=Raleway:wght@800&family=Unbounded:wght@300;900&display=swap" rel="stylesheet">>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1150&q=80">
 </head>
+
 <body>
-  <h1>NASA</h1>
-  <p>hello!</p>
+  <div class="container-main">
+    <div class="container-image">
+      <div id="container-image-text" class="nasa-text">NASA</div>
+      <img src="nasa.jpg" alt="Image not found" class="nasa-image">
+    </div> 
+    <main class="container-contact-info font-styling">
+      <div class="container-social-media margin-spacing-siblings">
+        <span class="section-title">
+          Social Media
+        </span>
+        <div class="social-media-content">
+          <ul class="social-media-content-list list">
+            <li class="social-media-li">Twitter - @nasa</li>
+            <li class="social-media-li">Facebook - fb/com/nasa</li>
+            <li class="social-media-li">Instagram - @nasa</li>
+            <li class="social-media-li">Youtube - youtube.com/NASA</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container-office-info margin-spacing-siblings">
+        <span class="section-title">
+          Office Info
+        </span>
+        <div class="office-info-content">
+          <ul class="office-info-list list">
+            <li>Public Communication Office</li>
+            <li>NASA Headquarters</li>
+            <li>300 E. Street SW, Suite 5R30</li>
+            <li>Washington, DC 20546</li>
+            <li>(202)-358-0001 (Office)</li>
+            <li>(202)-358-4338 (Fax)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container-contact-us margin-spacing-siblings">
+        <span class="section-title">
+          Contact Us
+        </span>
+        <form action="/dummy">
+          <label for="name" class="name-label">
+            Name
+          </label>
+          <input type="text" id="name" class="input-full-width" required>
+          <label for="message" class="message-label">
+            Message
+          </label>
+          <textarea id="message" class="input-full-width" required></textarea>
+          <button class="button-send">send</button>
+        </form>
+      </div>
+    </main>
+  </div>
 </body>
 </html>
